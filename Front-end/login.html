@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="height:100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="Images/leaf.png">
+    <title>Entrar | Mercado do Outono</title>
+    <script src="Main.js"></script>
+</head>
+<body style="overflow: hidden;
+             height:100%;
+             margin-top: 0px;
+             background-image:url(Images/outumn-forest.jpg);
+             background-repeat:no-repeat;
+             background-color: black;
+             background-size:cover;
+             background-position:center;">
+    <img src="Images/leaf.png" class="leafImg" name="leaf">
+    <img src="Images/leaf.png" class="leafImg" name="leaf">
+    <img src="Images/leaf.png" class="leafImg" name="leaf">
+    <img src="Images/leaf.png" class="leafImg" name="leaf">
+    <h2 class="text"style="position: absolute; 
+                           margin-right: 60vw;
+                           font-size:40px;
+                           margin-left: 50px;
+                           text-align:justify;
+                           top:50%;
+                           transform: translate(0, -50%);
+                           align-items:center;
+                           filter: drop-shadow(0px 0px 4px black) drop-shadow(0px 0px 4px black) drop-shadow(0px 0px 4px black);">Cadastre-se agora e tenha acesso a um catalogo de produtos feitos só para você.</h2>
+    <div class="container" style="margin-top: 0px;
+                                  background-color:rgba(0,0,0,0.75);
+                                  height:100vh;
+                                  width:50vw;
+                                  position: fixed;
+                                  right: 0;
+                                  box-shadow: 0px 0px 75px 75px rgba(0,0,0,0.75);">
+        <h1 class="text" id="logo"style="position:absolute;
+                                         visibility: visible;
+                                         z-index: 1;
+                                         font-size: 80px; 
+                                         left: 50%; 
+                                         top: 10%; 
+                                         white-space: nowrap;
+                                         overflow: hidden;     
+                                         transform: translate(-50%, 0); 
+                                         filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px rgb(196, 52, 0)) drop-shadow(0px 0px 3px white) drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 10px rgb(187, 50, 0)) drop-shadow(0px 0px 5px orangered);"> Mercado do<br>Outono</h1>
+        <img src="Images/leaf.png" id="folhaLogo" style="position:fixed;
+                                                         visibility: visible;
+                                                         width:60px;
+                                                         top:10%;
+                                                         transform: translate(-135px, 140px) rotate(-20deg);
+                                                         z-index:10;
+                                                         filter:drop-shadow(0px 5px 3px black)">
+        <form style="margin-top: 20%; height:50%; width:100%; position:absolute; visibility: visible;" id="formLogin" visibility:>
+            <div style="top: 50%; position: relative;">
+                <input class="text" type="email" name="emailTxt" placeholder="Email"></input>
+                <span class="popup" id="loginPopUp" onmouseleave="esconderPopUp('loginPopUp')"></span>
+            </div>
+            <div style="top: 50%; position: relative;">
+                <input type="password" style="top: 50%; position: relative;" class="text"name="senhaTxt" placeholder="Senha"></input>
+                <span class="popup" id="senhaPopUp" onmouseleave="esconderPopUp('senhaPopUp')"></span>
+            </div>
+            <div style="top: 50%; position: relative;padding-right:115px;">
+                <span class="text" style="position: relative; top:-5px;text-align: left;padding-bottom:5px;">Mostrar senha</span>
+                <input id="mostraSenha" type="checkbox" style="filter:hue-rotate(160deg); width:30px;" onclick="mostrarSenha()">
+            </div>
+            <div style="top: 50%; position: relative;">
+                <button id="buttonid" name="entrarBtn" class="text" style="top: 50%;" type="button" onclick="loginUsuario()">Entrar</button>
+                <span class="popup" id="botaoPopUp" onmouseleave="esconderPopUp('botaoPopUp')"></span>
+            </div>
+            <button id="buttonid" class="text" style="top: 50%;" type="button" onclick="cadastrarUsuario()">Cadastrar-se</button>
+        </form>
+        <!-- <form style="height:50%; width:100%; position:absolute;" id="formCadastro">
+            <div style="top: 50%; position: relative;">
+                <input class="text" type="email" name="emailTxt" placeholder="Email"></input>
+                <span class="popup" id="loginPopUp" onmouseleave="esconderPopUp('loginPopUp')"></span>
+            </div>
+        </form> -->
+    </div>
+</body>
+</html>
